@@ -4,7 +4,7 @@ Bash script to log thermostat data from a Redlink thermostat account at MyTotalC
 ## Configure
 * Clone the repo
 * create a "redlink.conf" file, and enter your MyTotalConnectComfort.com credentials as below:
-`USERNAME=**********`
+`USERNAME=**********
 PASSWORD=**********`
 * Run it.
 
