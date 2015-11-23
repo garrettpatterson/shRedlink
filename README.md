@@ -21,8 +21,10 @@ The script will run and generate a text file "tempdata.log" with a header, and t
 * outdoorTemp
 * schedCoolSp
 * schedHeatSp
+* weatherHumidity
+* weatherTemperature
 
-These all mean various things, although you'll probably only care to track a select few (like dispTemp)
+These all mean various things, although you'll probably only care to track a select few (like dispTemp).  Some thermostats with outside temp sensors will report through outdoorHumidity and outdoorTemp.  If yours doesn't it pulls temp based on location, and this data will come through weatherHumidity and weatherTemperature.
 
 ## Warnings
 This basically just uses cURL and basic auth to log into the mytotalconnectcomfort.com site, parse the relevant thermostat values out of the HTML with very loose REGEX and then munges it in bash to a tab-separated file.
